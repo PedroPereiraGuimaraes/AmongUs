@@ -1,6 +1,6 @@
 public class Astronauta {
 
-    public static int cont;
+    public static int cont=0;
     private String cor;
     private String nome;
     public Skin skin;
@@ -11,6 +11,7 @@ public class Astronauta {
         this.nome = nome;
         this.skin = skin;
         this.pet = pet;
+        cont ++;
     }
 
     public void mostraInfo(){
@@ -20,7 +21,13 @@ public class Astronauta {
         System.out.println("Pet: " + this.pet.getNome());
     }
 
-    public void verCameras(){}
-    public void reportar(){}
-    public void reparar(){}
+    public void verCameras(){
+        System.out.println(this.nome + " está vendo as cameras.");
+    }
+    public void reportar(){
+        System.out.println(this.nome + " está reportando.");
+    }
+    public void reparar(){
+        System.out.println(this.nome + " está reparando.");
+    }
 }
